@@ -1,2 +1,2 @@
-web: gunicorn locallibrary.wsgi --log-file -
+web: gunicorn diplomski.wsgi --log-file -
 python manage.py collectstatic --noinput
