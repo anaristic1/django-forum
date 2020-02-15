@@ -59,12 +59,6 @@ def get_profile(request, pk):
     return render(request, 'forum/profile.html', {'get_profile': profile, 'post_count': post_count})
 
 
-def delete_user(request, pk):
-    profile = User.objects.get(username=pk)
-    profile.delete()
-    return render(request, 'forum/index.html')
-
-
 @login_required
 def voting(request, pk, vote):
 

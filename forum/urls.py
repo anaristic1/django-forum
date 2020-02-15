@@ -28,7 +28,6 @@ urlpatterns += [
 
 urlpatterns += [
     path('user/<str:pk>/', views.get_profile, name='user-detail'),
-    path('user/<str:pk>/delete/', views.delete_user, name='user-delete'),
 ]
 
 urlpatterns += [

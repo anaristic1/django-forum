@@ -65,9 +65,4 @@
             </div>
     </div>
 
-    {% if user == get_profile %}
-        <div class="row justify-content-md-center">
-            <button class="btn btn-danger" id="btn-del"><a href="{% url 'user-delete' user.username %}">Delete user</a></button>
-        </div>
-    {% endif %}
 {% endblock %}
